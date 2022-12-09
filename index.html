@@ -1,0 +1,221 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fixar 3D</title>
+        <link rel="icon" href="./assets/image/icono.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/index.css">
+    </head>
+    <body>
+        
+    <!--Comienzo header y navbar-->
+    <header class="header">
+
+        <nav class="navbar shadow-lg padd-small">
+            <div class="nav-container">
+                <a href="index.html">
+                    <img class="logo" src="assets/image/Logo.png" alt="logo de la marca Fixar."></a>
+                <label for="menu-hamburguesa" class="nav-label">
+                    <img src="assets/image/bx-menu.svg" class="nav-img" alt="menú hamburguesa">
+                </label>
+                <input type="checkbox" id="menu-hamburguesa" class="nav-input">
+                <div class="nav-menu">
+                    <ul class="menu">
+                        <li class="item">
+                            <a class="link padd-small link2" href="#about-us">Nosotros</a>
+                        </li>
+                        <li class="item">
+                            <a class="link padd-small link3" href="portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="item">
+                            <a class="link padd-small link4" href="herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="item">
+                            <a class="link padd-small link5" href="#contact">Contacto</a>
+                        </li>
+                        <li class="item">
+                            <div>
+                                <a href="https://www.instagram.com/delgadofefe/" target="_blank"><img
+                                src="assets/image/instagramlogo.png" width="20px" alt="logo de instagram"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Fin de header y navbar-->
+
+    <!--Comienzo del sitio-->
+
+    <section class="box section-banner">
+        <video src="assets/image/Banner.mp4" autoplay muted loop></video>
+        <h1>Fixar 3D!</h1>
+        <h2>Somos una empresa de impresiones 3D que está dispuesta a llevar cualquier proyecto a la realidad.</h2>
+    </section>
+
+    <main class="container">
+
+
+        <!--Comienza sección nosotros-->
+
+        <section class="principal" id="about-us">
+
+            <div class="seccion-principal padd-large">
+
+                <div class="div1">
+                    <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <h2>Un poco sobre nosotros</h2>
+                        <p> ¡Hola! somos Fixar 3d, una empresa de impresiones 3D
+                            que tiene como objetivo poder realizar cualquier proyecto.
+                            El arte de la imaginación no tiene límites, y con la ayuda de
+                            las nuevas tecnologías estamos cada vez más cerca de
+                            representar lo que está en tu mente.
+                        </p>
+                        <ul>
+                            <li>
+                                <a class="boton" href="portafolio.html">
+                                    <svg>
+                                        <rect></rect>
+                                    </svg>
+                                    Trabajos</a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="div2">
+                    <img class="img-nosotros" src="assets/image/welcome.svg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Finaliza nosotros-->
+
+        <!--Comienza sección equipo-->
+
+        <section class="seccion-equipo" id="team">
+
+            <div class="segunda-seccion padd-large">
+
+                <div class="div-equipo">
+                    <article data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <h2>Conoces nuestras herramientas</h2>
+                        <p>Te contamos con que herramienta trabajamos, nuestras especialidades, nuestras impresoras y algunos procesos de nuestros productos.
+                        </p>
+                        <div class="botones-equipo">
+                            <ul>
+                                <li>
+                                    <a class="boton3" href="herramientas.html">
+                                        <svg>
+                                            <rect></rect>
+                                        </svg>
+                                        Herramientas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="div-equipo2">
+                    <img class="img-equipo" src="assets/image/fotoequipo.svg" alt="foto de equipo">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Termina sección equipo-->
+
+        <!--Inicio contacto-->
+
+        <section class="contacto container" id="contact">
+
+            <div class="seccion-contacto">
+                <div class="div-contacto">
+                    <article>
+                        <h2 class="padd-regular">
+                            Contactanos</h2>
+                        <h3>Habla con nosotros</h3>
+                        <p>Contactá con nosotros si tenes alguna consulta o si querés comprar
+                            nuestros productos.
+                        </p>
+                    </article>
+                    <div data-aos="fade-right" class="contact-redes">
+                        <p> <strong>Email:</strong> ejemplo@gmail.com</p>
+                        <p> <strong>WhatssApp:</strong> +54 9 11 1234-5678</p>
+                        <p> <strong>Instagram:</strong> Fixar 3D</p>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tu email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3 mensaje">
+                        <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--Fin del contacto-->
+
+    <!--Inicio footer-->
+
+    <footer class="footer">
+        <div class="container">
+            <h4>Somos Fixar 3D</h4>
+            <div class="div-footer">
+                <div>
+                    <p>
+                        Somos una empresa de impresiones 3D que está dispuesta a llevar cualquier proyecto a la
+                        realidad. Si
+                        te gustó nuestra web, podes visitar nuestro instagram para poder ver todos nuestros productos.
+                    </p>
+                </div>
+                <div class="footer-texto">
+                    <p>
+                        Seguinos en nuestras redes para estar al día y dejanos un mensaje con tus consultas.
+                    </p>
+
+                </div>
+            </div>
+            <div class="red-social">
+                <a href="https://www.fixar.com.ar/" target="_blank">
+                    <img src="assets/image/instagramfooter.png" alt="logo instagram"></a>
+                <a href="https://www.fixar.com.ar/" target="_blank">
+                    <img class="wsp" src="assets/image/wspfooter.png" alt="WhatsApp logo">
+                </a>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Diseñado por Federico Delgado&copy; 2022</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Fin de footer-->
+    </body>
+    </html>
