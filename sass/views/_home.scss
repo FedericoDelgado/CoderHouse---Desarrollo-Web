@@ -1,0 +1,1058 @@
+/* Banner */
+
+.section-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+    gap: 30px;
+
+    h1 {
+        font-size: 6em;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 3em;
+        width: 630px;
+        font-weight: 600;
+    }
+}
+
+.box {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: $blanco;
+    text-align: center;
+
+
+    video {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+/* Main */
+/* Sección nosotros */
+
+.container {
+    .principal {
+        background-color: $blanco;
+        height: 700px;
+        padding-top: 200px;
+
+        .seccion-principal {
+            @include flex(row, space-around, center, 5px);
+
+            .div1 {
+                width: 500px;
+
+                ul {
+                    padding: 10px 0;
+                }
+
+                h2 {
+                    color: $rosa;
+                    font-size: 4em;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 1.8em;
+                    padding: 20px 0px;
+                }
+
+                li {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    padding: 8px;
+                    display: inline;
+
+                    a:hover {
+                        color: $rosa;
+                        transition: ease-in-out 0.3s;
+                    }
+                }
+
+                .boton {
+                    position: absolute;
+                    width: 100px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 35px;
+
+                    &:hover {
+                        svg rect {
+                            stroke-dasharray: 40, 300;
+                            stroke-dashoffset: 167;
+                            stroke: $rosa;
+                        }
+
+                    }
+
+                    &:hover {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    svg,
+                    svg rect {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        fill: transparent;
+                    }
+
+                    rect {
+                        stroke: $violeta;
+                        stroke-width: 4;
+                        transition: 1s;
+                        stroke-dasharray: 300, 300;
+                        stroke-dashoffset: 0;
+
+                    }
+                }
+            }
+
+            .div2 {
+                .img-nosotros {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+/* Sección equipo */
+
+.container {
+    .seccion-equipo {
+
+        background-color: $blanco;
+        height: 700px;
+
+        .segunda-seccion {
+            @include flex(row, space-around, center, 30px);
+
+            .div-equipo {
+                width: 565px;
+                padding: 20px 0;
+
+                h2 {
+                    color: $violeta;
+                    font-weight: 600;
+                    font-size: 4em;
+                    padding: 15px 0;
+                }
+
+                p {
+                    font-size: 1.8em;
+                }
+
+                .botones-equipo {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 130px;
+                    padding-top: 30px;
+
+                    li {
+                        padding-top: 15px;
+                        padding-right: 0px;
+                        padding-bottom: 5px;
+                        padding-left: 0px;
+                    }
+
+                    li a {
+                        font-size: 1.5em;
+                        font-weight: 500;
+
+                        a:hover {
+                            color: $violeta;
+                            transition: ease-in-out 0.3s;
+                        }
+                    }
+
+
+                    .boton2 {
+                        position: absolute;
+                        width: 110px;
+                        height: 45px;
+                        text-align: center;
+                        line-height: 35px;
+
+                        &:hover {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+
+                        &:hover svg rect {
+                            stroke-dasharray: 40, 300;
+                            stroke-dashoffset: 150;
+                            stroke: $amarillo;
+                        }
+
+                        svg,
+                        svg rect {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            fill: transparent;
+                        }
+
+                        rect {
+                            stroke: $rosa;
+                            stroke-width: 4;
+                            transition: 1s;
+                            stroke-dasharray: 310, 310;
+                            stroke-dashoffset: 0;
+                        }
+                    }
+
+                    .boton3 {
+                        position: absolute;
+                        width: 150px;
+                        height: 45px;
+                        text-align: center;
+                        line-height: 35px;
+
+                        &:hover svg rect {
+                            stroke-dasharray: 50, 300;
+                            stroke-dashoffset: 107;
+                            stroke: $violeta;
+                        }
+
+                        &:hover {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+
+                        svg,
+                        svg rect {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            fill: transparent;
+                        }
+
+                        svg rect {
+                            stroke: $amarillo;
+                            stroke-width: 4;
+                            transition: 1s;
+                            stroke-dasharray: 390, 390;
+                            stroke-dashoffset: 0;
+                        }
+                    }
+                }
+            }
+
+            .div-equipo2 {
+                .img-equipo {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Sección productos */
+
+.container {
+    .productos {
+        background-color: $blanco;
+        height: 800px;
+
+
+        .tercera-seccion {
+            @include flex(row, space-around, center, 30px);
+
+            .div-productos {
+
+                h2 {
+                    font-size: 4em;
+                    padding: 15px 0;
+                    color: $rosa;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 1.8em;
+                    padding: 20px 0px;
+                }
+
+                .boton4 {
+                    position: absolute;
+                    width: 100px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 1.5em;
+
+                    &:hover {
+                        svg rect {
+                            stroke-dasharray: 40, 300;
+                            stroke-dashoffset: 167;
+                            stroke: $rosa;
+                        }
+
+                    }
+
+                    &:hover {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    svg,
+                    svg rect {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        fill: transparent;
+                    }
+
+                    rect {
+                        stroke: $violeta;
+                        stroke-width: 4;
+                        transition: 1s;
+                        stroke-dasharray: 300, 300;
+                        stroke-dashoffset: 0;
+
+                    }
+                }
+            }
+
+            .div-productos2 {
+
+                img {
+                    width: 400px;
+                    height: 400px;
+                }
+
+                ul li {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    padding-left: 50px;
+
+                    a:hover {
+                        color: $amarillo;
+                        transition: ease-in-out 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Sección contactos */
+
+.container {
+    .contacto {
+        height: 900px;
+
+        .seccion-contacto {
+            max-width: 100%;
+            padding: 90px 0;
+
+            .div-contacto {
+
+                h2 {
+                    color: $rosa;
+                    font-size: 4em;
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+                h3 {
+                    font-size: 2.5em;
+                    text-align: center;
+                    padding-bottom: 90px;
+                }
+
+                p {
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                .contact-redes {
+                    padding-top: 90px;
+                    padding-bottom: 90px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 90px;
+                    justify-content: center;
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .div-contacto2 {
+                padding: 80px 0;
+            }
+
+            .formulario {
+                width: 360px;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+
+                .form-label {
+                    font-size: 2em;
+                    color: $rosa;
+                    font-weight: 500;
+
+                }
+
+                .form-control {
+                    padding: 10px;
+                    font-size: 1.5em;
+                }
+
+                .mensaje {
+                    button {
+                        display: flex;
+                        margin-left: 300px;
+                        padding: 5px;
+                        border-radius: 10px;
+                        margin-top: 10px;
+                        background-color: $amarillo;
+                        font-weight: 500;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media */
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        .principal {
+            height: 850px;
+        }
+
+        .seccion-equipo {
+            height: 850px;
+        }
+    }
+
+    .section-banner {
+
+        gap: 30px;
+
+        h1 {
+            font-size: 5.5em;
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            width: 630px;
+            font-weight: 200;
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .container {
+        max-width: 660px;
+        margin: 0 auto;
+
+
+        .principal {
+            height: 700px;
+
+            .seccion-principal {
+                .div1 {
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .div2 {
+                    .img-nosotros {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+        .seccion-equipo {
+
+            height: 700px;
+
+            .segunda-seccion {
+
+                .div-equipo {
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .div-equipo2 {
+                    .img-equipo {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            .tercera-seccion {
+                gap: 25px;
+
+                .div-productos {
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+
+                .div-productos2 {
+                    img {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            .seccion-contacto {
+                .div-contacto {
+                    .contact-redes {
+                        p {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .container {
+        max-width: 540px;
+
+        .principal {
+
+            padding-top: 120px;
+            height: 600px;
+
+            .seccion-principal {
+                .div1 {
+                    h2 {
+                        text-align: center;
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        width: 400px;
+                        font-size: 2em;
+                        margin: 0 auto;
+                    }
+
+                    ul {
+                        padding-left: 30px;
+                    }
+                }
+
+                .div2 {
+                    .img-nosotros {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .seccion-equipo {
+            height: 600px;
+
+            .segunda-seccion {
+                .div-equipo {
+
+                    h2 {
+                        text-align: center;
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        width: 400px;
+                        font-size: 2em;
+                        margin: 0 auto;
+                    }
+
+                    .botones-equipo {
+                        flex-direction: row;
+                        padding-left: 60px;
+                        gap: 200px;
+                        padding-top: 30px;
+                    }
+                }
+
+                .div-equipo2 {
+                    .img-equipo {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            height: 600px;
+
+            .tercera-seccion {
+                .div-productos {
+                    h2 {
+                        text-align: center;
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        font-size: 2em;
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .div-productos2 {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            .seccion-contacto {
+                .div-contacto {
+                    .contact-redes {
+
+                        p {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-banner {
+
+        h1 {
+            font-size: 5em;
+            font-weight: 900;
+        }
+
+        h2 {
+            width: 300px;
+            font-weight: 200;
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .container {
+        max-width: 420px;
+
+
+        .principal {
+            .seccion-principal {
+                .div1 {
+                    h2 {
+                        font-size: 3em;
+                    }
+
+                    p {
+                        font-size: 2em;
+                        width: 350px;
+                    }
+                }
+            }
+        }
+
+        .seccion-equipo {
+            .segunda-seccion {
+                .div-equipo {
+                    p {
+                        padding: 20px 0;
+                        font-size: 2em;
+                        width: 350px;
+                    }
+
+                    .botones-equipo {
+                        flex-direction: row;
+                        gap: 150px;
+                        padding-top: 30px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            .tercera-seccion {
+                .div-productos {
+                    h2 {
+
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        font-size: 2em;
+                        width: 350px;
+                        margin: 0 auto;
+                    }
+                }
+
+                .div-productos2 {
+                    img {
+                        display: none;
+                    }
+                }
+
+
+
+                width: 405px;
+
+                .div-productos {
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+
+            height: 1000px;
+
+            .seccion-contacto {
+                .div-contacto {
+                    .contact-redes {
+
+                        align-items: center;
+                        flex-direction: column;
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                        gap: 20px;
+
+                        p {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:440px) {
+
+    .container {
+        max-width: 300px;
+
+
+        .seccion-equipo {
+            .segunda-seccion {
+                .div-equipo {
+
+                    h2 {
+                        font-size: 3em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                        width: 350px;
+                    }
+
+                    .botones-equipo {
+                        gap: 150px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .principal {
+            .seccion-principal {
+                .div1 {
+                    h2 {
+                        font-size: 3em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                        width: 350px;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            .tercera-seccion {
+                .div-productos {
+                    h2 {
+                        font-size: 3em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                        width: 350px;
+                    }
+                }
+            }
+        }
+
+        .section-banner {
+
+            h2 {
+                font-size: 2em;
+                width: 270px;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .container {
+        .principal {
+            height: 700px;
+
+            .seccion-principal {
+                .div1 {
+
+                    h2 {
+                        font-size: 3em;
+                        width: 250px;
+                    }
+
+                    p {
+                        width: 200px;
+                        font-size: 1.6em;
+                        padding: 20px 0px;
+                        margin: 0 auto;
+                    }
+
+                    ul {
+                        padding-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .seccion-equipo {
+            .segunda-seccion {
+                .div-equipo {
+
+                    h2 {
+                        font-size: 3em;
+                        width: 300px;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 1.6em;
+                        padding: 20px 0px;
+                        margin: 0 auto;
+                    }
+
+                    .botones-equipo {
+
+                        gap: 130px;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            .tercera-seccion {
+                width: 0;
+                margin: 0 auto;
+
+                .div-productos {
+                    h2 {
+                        font-size: 3em;
+                        width: 250px;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 1.6em;
+                        padding: 20px 0px;
+                        margin: 0 auto;
+                    }
+
+                    ul {
+                        padding-left: 70px;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            .seccion-contacto {
+                .formulario {
+                    width: 200px;
+
+                    .form-label {
+                        font-size: 1.5em;
+                    }
+
+                    .form-control {
+                        padding: 8px;
+                        font-size: 1.3em;
+                    }
+
+                    .mensaje {
+                        button {
+                            margin-left: 145px;
+                            padding: 5px;
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .container {
+        max-width: 100px;
+
+        .principal {
+            height: 560px;
+
+            .seccion-principal {
+                .div1 {
+
+                    h2 {
+                        font-size: 2.5em;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+
+
+        .seccion-equipo {
+            .segunda-seccion {
+
+                .div-equipo {
+
+                    h2 {
+                        font-size: 2.5em;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+
+        .productos {
+            height: 560px;
+
+            .tercera-seccion {
+
+
+                .div-productos {
+
+                    h2 {
+                        font-size: 2.5em;
+                    }
+
+                    p {
+                        width: 250px;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            .seccion-contacto {
+                .div-contacto {
+                    h2 {
+                        font-size: 3em;
+                    }
+
+                    h3 {
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-banner {
+
+        h1 {
+            font-size: 4.5em;
+            width: 300px;
+            font-weight: 900;
+        }
+
+        h2 {
+            width: 200px;
+        }
+
+    }
+}

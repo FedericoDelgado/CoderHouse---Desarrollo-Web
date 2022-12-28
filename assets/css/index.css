@@ -393,7 +393,7 @@ h4 {
             stroke-dashoffset: 107;
             stroke: #6300ff; }
           .container .seccion-equipo .segunda-seccion .div-equipo .botones-equipo .boton3:hover {
-            text-transform: uppercase;
+            text-transform: uppercase; 
             font-weight: 600;
             background: linear-gradient(to right, #b663ff, #cc66f5, #dd6ceb, #ea73e3, #f57cdb, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
             -webkit-background-clip: text;
@@ -403,7 +403,7 @@ h4 {
           .container .seccion-equipo .segunda-seccion .div-equipo .botones-equipo .boton3 svg rect {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 0; 
             width: 100%;
             height: 100%;
             fill: transparent; }
